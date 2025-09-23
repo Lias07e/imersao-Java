@@ -18,7 +18,9 @@ public class Triangulo {
    this.ladoA = ladoA;
    this.ladoB = ladoB;
    this.ladoC = ladoC;
-   
+   calcularArea();
+    definirTipo();
+
     
  }
 
@@ -50,38 +52,43 @@ public class Triangulo {
 
   public double calcularArea(double ladoA, double ladoB, double ladoC){
 
- double Sp = (ladoA + ladoB + ladoC ) / 2;
-       area =  Math.sqrt(Sp * (Sp - ladoA) * (Sp - ladoB) * (Sp - ladoC));
+if (ladoA + ladoB > ladoC) {
+           double sp = ladoA + ladoB + ladoC / 2;
+           area = Math.sqrt(sp * (sp - ladoA) * (sp - ladoB) * (sp - ladoC));
+       } 
+else if(ladoA + ladoC > ladoB){
+           double sp = ladoA + ladoB + ladoC / 2;
+           area = Math.sqrt(sp * (sp - ladoA) * (sp - ladoB) * (sp - ladoC));
+       }
+else if(ladoB + ladoC > ladoA){
+           double sp = ladoA + ladoB + ladoC / 2;
+           area = Math.sqrt(sp * (sp - ladoA) * (sp - ladoB) * (sp - ladoC));
+       }
+else {
+           area = 0;
+       }
 
-  if (ladoA + ladoB > ladoC && ladoB + ladoC > ladoA && ladoC + ladoA > ladoB){
-     System.out.println(" Isso é um triangulo");
   }
-  else {
-  }
-  return area;
 
-  }
-
-
-
-  public String definirTipo(double area){
+  public String definirTipo(){
 
    if(ladoA ==ladoB && ladoB == ladoC){
-    System.out.println("Equilatero");
+    tipo="Equilatero";
  }
 
   if(ladoA == ladoB && ladoB != ladoC){
-    System.out.println("Isosceles");
+      tipo="Escaleno";
   }
 
   if(ladoA != ladoB && ladoB != ladoC){
-    System.out.println("Escaleno");
+   tipo="Isosceles";
   }
 
   else{
-    System.out.println("Indefinido");
+   tipo="Indefinido";
   }
     return tipo;
   }
 
 }
+
