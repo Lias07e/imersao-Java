@@ -9,8 +9,6 @@ public class Triangulo {
     private double area;
     private String tipo;
 
-
-
  public Triangulo( int idTriangulo, double ladoA 
                    ,double ladoB , double ladoC ){
 
@@ -20,32 +18,23 @@ public class Triangulo {
    this.ladoC = ladoC;
    calcularArea();
     definirTipo();
-
     
  }
-
-    
-
  public int getIdTriangulo() {
     return idTriangulo;
  }
- 
  public double getLadoA() {
     return ladoA;
  }
-
  public double getLadoB() {
     return ladoB;
  }
-
  public double getLadoC() {
     return ladoC;
  }
-
  public double getArea() {
     return area;
  }
-
  public String getTipo() {
     return tipo;
  }
@@ -67,7 +56,7 @@ else if(ladoB + ladoC > ladoA){
 else {
            area = 0;
        }
-
+      return area;
   }
 
   public String definirTipo(){
@@ -75,15 +64,12 @@ else {
    if(ladoA ==ladoB && ladoB == ladoC){
     tipo="Equilatero";
  }
-
   if(ladoA == ladoB && ladoB != ladoC){
       tipo="Escaleno";
   }
-
   if(ladoA != ladoB && ladoB != ladoC){
    tipo="Isosceles";
   }
-
   else{
    tipo="Indefinido";
   }
@@ -91,4 +77,5 @@ else {
   }
 
 }
+
 
