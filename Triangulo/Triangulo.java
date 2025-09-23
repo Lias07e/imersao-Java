@@ -16,7 +16,7 @@ public class Triangulo {
    this.ladoA = ladoA;
    this.ladoB = ladoB;
    this.ladoC = ladoC;
-   calcularArea();
+   this.area = calcularArea();
     definirTipo();
     
  }
@@ -77,5 +77,6 @@ else {
   }
 
 }
+
 
 
