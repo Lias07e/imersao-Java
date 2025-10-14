@@ -2,7 +2,7 @@ public class RacaTeste {
      public static void main(String[] args) {
 
          // declaro meu vetor(ARRAY) //
-        Raca[] rc = new Raca[4];
+        Raca[] rc = new Raca[3];
 
         // aqui colocamos os meus parametros no vetor que declarei //
          rc[0] = new Raca(100, "Lobo Ibérico",
@@ -14,8 +14,7 @@ public class RacaTeste {
          rc[2] = new Raca(103, "lobo gigante",
                 "Canídeo", "Espanha");
 
-          rc[3] = new Raca(102, "Lobo humano",
-                "Canídeo", "Espanha");
+       
 
  System.out.println();
 		
@@ -43,4 +42,5 @@ public class RacaTeste {
     }
 
 }
+
 
