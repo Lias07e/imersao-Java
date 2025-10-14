@@ -2,7 +2,7 @@ public class RacaTeste {
      public static void main(String[] args) {
 
          // declaro meu vetor(ARRAY) //
-        Raca[] rc = new Raca[3];
+        Raca[] rc = new Raca[4];
 
         // aqui colocamos os meus parametros no vetor que declarei //
          rc[0] = new Raca(100, "Lobo Ibérico",
@@ -13,8 +13,10 @@ public class RacaTeste {
 
          rc[2] = new Raca(103, "lobo gigante",
                 "Canídeo", "Espanha");
-
-       
+        
+        rc[3] = new Raca(103, "lobo gigante",
+                "Canídeo", "Espanha");
+        
 
  System.out.println();
 		
@@ -22,11 +24,11 @@ public class RacaTeste {
                                             true, true) == true,  
 			   	        "Colocando o 1º elemento em extinção");
 		
-		mostrarMensagem(rc[1].analisarExtincao(true, true, 
+		mostrarMensagem(rc[3].analisarExtincao(true, true, 
                                             true, true) == true,
 				        "Colocando o 4º elemento em extinção");
 
-		mostrarMensagem(rc[2].analisarExtincao(false, true, 
+		mostrarMensagem(rc[0].analisarExtincao(false, true, 
                                             true, false) == false,  
 	   	        "Colocando o 1º elemento fora de extinção");
 
@@ -42,6 +44,7 @@ public class RacaTeste {
     }
 
 }
+
 
 
 
