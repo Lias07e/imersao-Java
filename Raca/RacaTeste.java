@@ -22,11 +22,11 @@ public class RacaTeste {
                                             true, true) == true,  
 			   	        "Colocando o 1º elemento em extinção");
 		
-		mostrarMensagem(rc[3].analisarExtincao(true, true, 
+		mostrarMensagem(rc[1].analisarExtincao(true, true, 
                                             true, true) == true,
 				        "Colocando o 4º elemento em extinção");
 
-		mostrarMensagem(rc[0].analisarExtincao(false, true, 
+		mostrarMensagem(rc[2].analisarExtincao(false, true, 
                                             true, false) == false,  
 	   	        "Colocando o 1º elemento fora de extinção");
 
@@ -42,5 +42,6 @@ public class RacaTeste {
     }
 
 }
+
 
 
