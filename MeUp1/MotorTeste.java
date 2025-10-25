@@ -11,10 +11,16 @@ public class MotorTeste {
 
         System.out.println("============================");
         mt.ligarMotor();
-        System.out.println(mt);
+        mt.ligarMotor();
 
+         System.out.println("============================");
+        mt.ligarMotor();
+        mt.desligarMotor();
+        
         System.out.println("============================");
         mt.desligarMotor();
+        mt.desligarMotor();
+        
         System.out.println(mt);
 
 
@@ -22,3 +28,4 @@ public class MotorTeste {
 
     }
 }
+
