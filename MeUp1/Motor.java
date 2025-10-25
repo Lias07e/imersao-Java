@@ -51,11 +51,11 @@ public class Motor {
 
     public void desligarMotor(){
         if(!ligado){
-            System.out.println("O motor está desligado");
+            System.out.println("O motor já  desligado");
         }
         else{
             ligado = false;
-            System.out.println("O motor está desligado");
+            System.out.println("O motor foi desligado");
         }
     }
 
@@ -69,4 +69,5 @@ public class Motor {
 
     }
 }
+
 
