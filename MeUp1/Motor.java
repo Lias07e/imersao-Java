@@ -62,10 +62,11 @@ public class Motor {
     @Override
     public String toString() {
         return  "=== DADOS DO MOTOR ===\n" +
-                 "cilindradas :" + cilindrada + "\n" +
-                 "tipo de modelo: " + modelo + "\n" +
+                 "Modelo: " + modelo + "\n" +
+                 "Cilindradas :" + cilindrada + "\n" +
                  "tipo de combustivel: " + tipoCombustivel + "\n"+
-                 "como o motor está :" +ligado ;
+                 "Motor está ligado :" + ligado ;
 
     }
 }
+
