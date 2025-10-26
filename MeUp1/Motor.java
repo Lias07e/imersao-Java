@@ -21,6 +21,10 @@ public class Motor {
     public int getCilindrada() {
         return cilindrada;
     }
+    
+    public void setCilindrada(int cilindrada) {
+        this.cilindrada = cilindrada;
+    }
 
     public boolean isLigado() {
         return ligado;
@@ -69,6 +73,7 @@ public class Motor {
 
     }
 }
+
 
 
 
