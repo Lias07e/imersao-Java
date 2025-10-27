@@ -42,26 +42,26 @@ public class Motor {
         this.tipoCombustivel = tipoCombustivel;
     }
 
-    public void ligarMotor(){
-        if(ligado){
-            System.out.println("O motor já está ligado");
-        }
-        else{
-            ligado = true;
-            System.out.println("O motor ligou");
+   public String ligarMotor(){
+            if(ligado){
+                return "O motor já está ligado";
+            }
+            else{
+                ligado = true;
+                return "O motor ligou";
+            }
+
         }
 
-    }
-
-    public void desligarMotor(){
-        if(!ligado){
-            System.out.println("O motor já está desligado");
+        public String desligarMotor(){
+            if(!ligado){
+                return "O motor já está desligado";
+            }
+            else{
+                ligado = false;
+                return "O motor foi desligado";
+            }
         }
-        else{
-            ligado = false;
-            System.out.println("O motor foi desligado");
-        }
-    }
 
     @Override
     public String toString() {
@@ -73,6 +73,7 @@ public class Motor {
 
     }
 }
+
 
 
 
